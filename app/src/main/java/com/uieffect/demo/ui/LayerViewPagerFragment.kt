@@ -48,13 +48,11 @@ class LayerViewPagerFragment : Fragment() {
         }
 
         override fun getView(container: ViewGroup?, position: Int): View {
-
             val view = View.inflate(context,R.layout.item_layerviewpager,null)
             val imageView = view.findViewById<ImageView>(R.id.imageView)
             imageView.setImageResource(resIds[position])
             container?.addView(view)
             return view
         }
-
     }
 }
