@@ -68,7 +68,7 @@ public class LayerViewPager extends ViewGroup {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        if (getChildCount() != 1) throw new IllegalArgumentException("Child count must be one");
+        if (getChildCount() != 1) throw new RuntimeException("The child count must be 1");
 
 
         mViewPager.measure(widthMeasureSpec, heightMeasureSpec);
